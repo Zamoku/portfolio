@@ -1,0 +1,179 @@
+/* @import url("https://fonts.googleapis.com/css?family=Sofia"); */
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-image: url("Limeade.jpg");
+    /* background-color:#8A8E91; */
+    /* font-family: "Sofia", sans-serif; */
+    
+}
+.container .main{
+    background-color: indigo;
+    width: 100%;
+    font-family: "Sofia", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:#EEFFDB; 
+    position: sticky;
+    /* align-content: center;  */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* align-items: center; */
+    justify-content: space-between; 
+    padding: 1rem 3rem;   
+    box-shadow: 0 3px 5px black;
+}
+.heading h1, h4{
+   color:darkkhaki;
+   font-family: "Sofia", sans-serif;
+}
+/* .heading{
+   background-image: url("Limeade.jpg"); 
+} */
+.first_project{
+    width: 50%;
+    height: 200px;
+    background-color: darkgoldenrod;
+}
+.second_project{
+    width: 50%;
+    height: 200px;
+    background-color:darkkhaki;
+    display: flex;
+
+}
+a {
+    text-decoration: none;
+    color: #855A5C;
+}
+  
+a:hover {
+    color: crimson;
+}
+.menu{
+    display: flex;
+    gap: 5rem;
+} 
+ul{
+    list-style: none;
+}
+.burger-menu{
+    cursor: pointer;
+    /* color: ; */
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    /* cursor: pointer; */
+    display: none;
+}
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+  .projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 145px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+  }
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }  
+  .socials {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: fixed; */
+    /* right: 1%; */
+    bottom: 50%;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+  }
+  @media screen and (max-width: 720px){
+      body{
+          background-color: fuchsia;
+      }
+    nav {
+        padding: 0.7rem 0.5rem;
+      }
+      nav ul {
+        position: fixed;
+        background-color:white;
+        flex-direction: column;
+        top: 86px; 
+        left: 10%; 
+         width: 30%; 
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+      }
+       nav ul li {
+        margin: 8px;
+      }
+      .burger-menu {
+        display: block;
+      }
+    
+      nav ul.show {
+        transform: translateX(0);
+      }
+  }
