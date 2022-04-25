@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="simple-grid.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
     
-    <title>Nomzamo</title>
+    <title>Nomzamo's Portfolio</title>
 </head>
 <body>
-    <div class="container main">
-        <div class="row">
-          <nav class="col-9">
-            <ul class="menu">
+     <div class="container"> 
+        <!-- <div class="row"> -->
+          <nav class="navbar">
+            <ul class="center menu">
               <li><a href="#Home">Home</a></li>
               <li><a href="#About">About</a></li>
               <li><a href="#Projects">Projects</a></li>
+
               <!-- <li><a href="#Front-end">Front-end</a></li>  -->
               <!-- <li><a href="#Back-end">Back-end</a></li> -->
               <li><a href="#Contact">Contact</a></li>
@@ -30,9 +32,9 @@
               <ion-icon class="bars" name="menu-outline"></ion-icon>
             </button>
           </nav>
-          <div class="col-10 center heading">
+          <div class="center heading">
             <h1>Hi, I'm Nomzamo!</h1> 
-            <h4>Agile web developer</h4>
+            <h2>Agile web developer</h2>
             
           
             <img src="gettyimages.jpg" alt="image_portfolio">
@@ -43,9 +45,8 @@
               Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
             
           </div>
-          
-          <div class="col-10 about">
-              <!-- <h3>My work</h3>  -->
+          <div>
+          <div class="about center">
               <section class="skills" id="skills">
                 <h2 class="skill-header">My Top Skills</h2>
           
@@ -57,8 +58,6 @@
                   </div>
           
                   <div class="second-set animate__animated animate__pulse">
-                    <!-- <img src="icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" /> -->
-                    <!-- <img src="icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card"/> -->
                     <img src="icons8-git.svg" alt="" loading="lazy" class="icon icon-card"/>
                   </div>
                 </div>
@@ -66,11 +65,11 @@
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
                 purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. 
                 Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-            <!-- This content will take up 6/12 (or 1/2) of the container -->
+          </div>
            
           </div>
           <div class="col-10">
-            <!-- <h3>Projects</h3> -->
+ 
             <section class="projects" id="projects">
               <h2 class="projects-title">Some of my Recent Projects</h2>
               <div class="projects-container">
@@ -87,7 +86,7 @@
                     ratione vel inventore labore commodi modi quos culpa aut saepe!
                     Alias!
                   </p>
-                  <a href="#" target="_blank" class="project-link">Check it Out</a>
+                  <a href="https://zamoku.github.io/Responsive_LandingPage/" target="_blank" class="project-link">Check it Out</a>
                 </div>
                 <div class="project-container project-card">
                   <img
@@ -96,13 +95,13 @@
                     loading="lazy"
                     class="project-pic"
                   />
-                  <h3 class="project-title">Netflix Clone</h3>
+                  <h3 class="project-title">Still to come</h3>
                   <p class="project-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
                     ratione vel inventore labore commodi modi quos culpa aut saepe!
                     Alias!
                   </p>
-                  <a href="#" target="https://zamoku.github.io/Responsive_LandingPage/" class="project-link">Check it Out</a>
+                  <a href="https://zamoku.github.io/Responsive_LandingPage/" target="" class="project-link">Check it Out</a>
                 </div>
                 <div class="project-container project-card">
                   <img
@@ -121,24 +120,10 @@
                 </div>
               </div>
             </section>
-            <!-- <ul>
-              <li>Front-end</li>
-              <div >
-              </div>
-              <div >
-              </div>
-            </ul>
-            
-            <ul>
-              <li>Back-end</li>
-              <div >
-              </div>
-              <div >
-              </div>
-            </ul> -->
+        
            
           </div>
-          <div class="col-8">
+          <div class="footer center">
             <h3>Contact me</h3>
             
             <a href="0846327636">0846327636</a>
@@ -169,7 +154,7 @@
             </p>
       </footer>
         </div>
-      </div>
+     
     </div>  
   
       <script src="assets/js/app.js"></script>
