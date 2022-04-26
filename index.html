@@ -1,163 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/> 
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
+   <!-- here is the library link -->
+   <script src="jquery-3.4.0.min.js"></script>
     
-    <title>Nomzamo's Portfolio</title>
+   <!-- below will go our script -->
+   <script src="scripts/navbar.js"></script>
+
+
+  <title>Nomzamo's Portfolio</title>
 </head>
+
 <body>
-     <div class="container"> 
-          <nav class="navbar">
-            <ul class="center menu">
-              <li><a href="#Home">Home</a></li>
-              <li><a href="#About">About</a></li>
-              <li><a href="#Projects">Projects</a></li>
-
-              <li><a href="#Contact">Contact</a></li>
-            </ul>
-            <button class="burger-menu" id="burger-menu">
+  <div class="container">
+    <nav class="navbar">
+      <ul class="center menu">
+        <button> 🞬 </button>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- <button class="burger-menu" id="burger-menu">
               <ion-icon class="bars" name="menu-outline"></ion-icon>
-            </button>
-          </nav>
-          <div class="center heading">
-            <h1>Hi, I'm Nomzamo!</h1> 
-            <h2>Agile web developer</h2>
-            
-          
-            <img src="gettyimages.jpg" alt="image_portfolio">
-            <h3> About Me</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
-              purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. 
-              Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-            
-          </div>
-          <div>
-          <div class="about center">
-              <section class="skills" id="skills">
-                <h2 class="skill-header">My Top Skills</h2>
-          
-                <div class="skills-wrapper">
-                  <div class="first-set animate__animated animate__pulse">
-                    <img src="icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card"/>
-                    <img src="icons8-css3.svg" alt="" loading="lazy" class="icon icon-card"/>
-                    <img src="icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card"/>
-                  </div>
-          
-                  <div class="second-set animate__animated animate__pulse">
-                    <img src="icons8-git.svg" alt="" loading="lazy" class="icon icon-card"/>
-                  </div>
-                </div>
-              </section>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
-                purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. 
-                Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-          </div>
-           
-          </div>
-          <div class="col-10">
- 
-            <section class="projects" id="projects">
-              <h2 class="projects-title">Some of my Recent Projects</h2>
-              <div class="projects-container">
-                <div class="project-container project-card">
-                  <img
-                    src="maxresdefault.jpg"
-                    alt="basic website"
-                    loading="lazy"
-                    class="project-pic"
-                  />
-                  <h3 class="project-title">Basic Website</h3>
-                  <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                    ratione vel inventore labore commodi modi quos culpa aut saepe!
-                    Alias!
-                  </p>
-                  <a href="https://zamoku.github.io/Responsive_LandingPage/" target="_blank" class="project-link">Check it Out</a>
-                </div>
-                <div class="project-container project-card">
-                  <img
-                    src="coming_soon_image.jpeg"
-                    alt="coming_soon"
-                    loading="lazy"
-                    class="project-pic"
-                  />
-                  <h3 class="project-title">Still to come</h3>
-                  <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                    ratione vel inventore labore commodi modi quos culpa aut saepe!
-                    Alias!
-                  </p>
-                  <a href="https://zamoku.github.io/Responsive_LandingPage/" target="" class="project-link">Check it Out</a>
-                </div>
-                <div class="project-container project-card">
-                  <img
-                    src="coming_soon_image.jpeg"
-                    alt="project_coming_soon"
-                    loading="lazy"
-                    class="project-pic"
-                  />
-                  <h3 class="project-title">Still to come</h3>
-                  <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                    ratione vel inventore labore commodi modi quos culpa aut saepe!
-                    Alias!
-                  </p>
-                  <a href="#" target="_blank" class="project-link">Check it Out</a>
-                </div>
-              </div>
-            </section>
-        
-           
-          </div>
-          <div class="footer center">
-            <h3>Contact me</h3>
-            
-            <a href="0846327636">0846327636</a>
-            <a href="mailto:nomzamo.nmuleka@gmail.com">nomzamo.nmuleka@gmail.com</a>
-        <div class="socials">  
-            <a href="#" target="_blank"
-        ><img
-          src="icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon"
-      /></a>
+            </button> -->
+    </nav>
+    <div class="center heading">
+      <h1>Hi, I'm Nomzamo!</h1>
+      <h2>Agile web developer</h2>
 
-      <a href="#" target="_blank"
-      ><img src="icons8-github.gif" alt="Github" class="socicon"
-    /></a>
+      <section class="hero" id="about">
+      <img class="portfolio_img" src="gettyimages.jpg" alt="image_portfolio">
+      <div class="bio animate__animated animate__shakeX">
+      <h3 class="bio-title"> About Me</h3>
+      <p class="bio-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna
+        sed pulvinar ultricies,
+        purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+        Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas. </p>
+</div>
+    </div>
+  </section >
+    <div>
+      <!-- <div class="about center"> -->
+        <section class="skills" id="skills">
+          <h2 class="skill-header">My Top Skills</h2>
 
-    <a href="#" target="_blank"
-        ><img
-          src="icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
+          <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+              <img src="icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+              <img src="icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
           </div>
-          <footer>
-            <p class="copy">
-              Built with &#x2661; by
-              <a href="https://twitter.com/Zamo_Muleka" target="_blank">Nomzamo Muleka</a
-              >
+        </section>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere,
+          magna sed pulvinar ultricies,
+          purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+          Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. </p> -->
+      <!-- </div> -->
+
+    </div>
+   
+
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img src="maxresdefault.jpg" alt="basic website" loading="lazy" class="project-pic" />
+            <h3 class="project-title">Basic Website</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
             </p>
-      </footer>
+            <a href="https://zamoku.github.io/Responsive_LandingPage/" target="_blank" class="project-link">Check it
+              Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img src="coming_soon_image.jpeg" alt="coming_soon" loading="lazy" class="project-pic" />
+            <h3 class="project-title">Still to come</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="https://zamoku.github.io/Responsive_LandingPage/" target="" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img src="coming_soon_image.jpeg" alt="project_coming_soon" loading="lazy" class="project-pic" />
+            <h3 class="project-title">Still to come</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
         </div>
-     
-    </div>  
+      </section>
+
+
+      <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+                  required />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+                  required />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                  class="input-field" required></textarea>
+              </div>
+              <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+
   
-      <script src="assets/js/app.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script 
-    nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
-    </script>
+    <div class="footer center">
+      <h3>Contact me</h3>
+
+      <a href="0846327636">0846327636</a>
+      <a href="mailto:nomzamo.nmuleka@gmail.com">nomzamo.nmuleka@gmail.com</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/nomzamo-muleka-36a14389/" target="_blank"><img src="icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
+            class="socicon" /></a>
+
+        <a href="https://github.com/Zamoku" target="_blank"><img src="icons8-github.gif" alt="Github" class="socicon" /></a>
+
+        <a href="#" target="_blank"><img src="icons8-instagram.gif" alt="Instagram" loading="lazy"
+            class="socicon" /></a>
+      </div>
+      <footer>
+        <p class="copy">
+          Built with &#x2661; by
+          <a href="https://twitter.com/Zamo_Muleka" target="_blank">Nomzamo Muleka</a>
+        </p>
+      </footer>
+    </div>
+
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
+
+  </div>
+ <script>// scroll to top functionality
+  const scrollUp = document.querySelector("#scroll-up");
+    
+    scrollUp.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });</script>
+  <script src="assets/js/app.js">
+  
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+  </script>
+
+
+
+<script>
+  $(document).ready(function(){
+  /* function called when you click of the button */
+  $("button").click(function(){
+      
+      /* this if else to change the text in the button */
+      if($("button").text() == "☰"){
+       $("button").text("🞬");
+      }else{
+        $("button").text("☰");
+      }
+    
+    /* this function toggle the visibility of our "li" elements */
+    $("li").toggle("slow");
+  });
+});
+</script>
 </body>
 </html>

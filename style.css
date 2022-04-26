@@ -11,18 +11,16 @@ body{
 }
 .container {
     font-family: "Sofia", sans-serif;
-    margin-left: 50px;
+    margin: 20px;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     background-color:aliceblue;  
     position: sticky;
-    /* align-content: center;  */
     top: 0;
     left: 0;
     z-index: 1; 
-    /* align-items: center; */
     padding: 1rem 3rem;    
     box-shadow: 0 3px 5px black; 
 }
@@ -34,6 +32,31 @@ body{
 h2{
   font-family: 'Dancing Script', cursive;
 }
+
+.bio {
+  width: 25rem;
+  padding: 0.725rem;
+  border-radius: 6px;
+  /* box-shadow: 0px 2px 15px 2px black; */
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 98.75rem;
+  margin: auto;
+  padding: 30px;
+}
 .heading h1, h3{
    color:darkkhaki;
    font-family: "Sofia", sans-serif;
@@ -43,22 +66,18 @@ h2{
    background-color: blanchedalmond;
    /* background-image: url("https://c2.staticflickr.com/6/5208/5308016251_3eaa8dc84d_b.jpg");   */
    /* background-image: url("Limeade.jpg"); */
-   width: 100%;
-   /* margin-left: auto; */
-   /* margin-right: auto; */
-   /* padding-bottom: 350px; */
+   /* width: 100%; */
    height: 600px;
-   padding: 32px 0;  
+   padding: 5px 5px;  
    margin-top: 2rem;
    border-radius: 7px;
 } 
+
 .about{
   background-color: darkgray;
-  padding: 32px 0;
+  padding: 5px 5px; 
   margin-top: 2rem;
   border-radius: 7px;
-  
-
 }
 .first_project{
     width: 50%;
@@ -70,19 +89,17 @@ h2{
     height: 200px;
     background-color:darkkhaki;
     display: flex;
-
 }
 a {
     text-decoration: none;
     color: #855A5C;
 }
-  
 a:hover {
     color: crimson;
 }
 .menu{
     display: flex;
-    gap: 9rem;
+    gap: 7rem;
 } 
 ul{
     list-style: none;
@@ -91,34 +108,42 @@ ul .menu{
   margin-left: auto;
   margin-right: auto;
 }
-.burger-menu{
+ /* .burger-menu{
     cursor: pointer;
-    /* color: ;  */
+     color: ;  
     font-size: 2rem;
     border: 0;
     background-color: transparent;
-    display: none;
-}
+    display: none; 
+ }   */
 .skills {
-    max-width: 68.75rem;
+    /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
-    
+    background-color: darkgray;
+    padding: 5px 5px; 
+    margin-top: 2rem;
+    border-radius: 7px;
   }
-  
   .skill-header {
     margin-bottom: 1rem;
   }
-  
   .skills-wrapper img {
     padding: 1.25rem;
   }
-  
   .icon {
     width: 11.875rem;
     height: 11.25rem;
   }
+  .icon-card {
+    background-color:lemonchiffon;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  
   .projects {
     background-color: khaki;
     padding: 32px 0;
@@ -152,11 +177,11 @@ ul .menu{
   }
   
   .project-title {
-    margin-bottom: var(--bottom-margin);
+    margin-bottom: 30px;
   }
   
   .project-details {
-    margin-bottom: var(--bottom-margin);
+    margin-bottom: 50px;
   }
   
   .project-card {
@@ -166,49 +191,214 @@ ul .menu{
     padding: 20px;
     margin: 10px;
   }  
-  .socials {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* position: fixed; */
-    /* right: 1%; */
-    bottom: 50%;
-    
+  
+  .contact {
+    margin-top: 2rem;
   }
   
+  .contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+  }
+  
+  .contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+  }
+  .contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+  }
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+  .submit-btn:hover {
+    background-color: rgb(0, 153, 255);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+  }
+  .contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+  }
+  .socials {
+    bottom: 50%; 
+  }
   .socicon {
     width: 2rem;
     height: 2rem;
+  }
+  .scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
   }
   .footer{
     background-color: lightcoral;
     border-radius: 7px;
   }
   @media screen and (max-width: 720px){
-      body{
-          background-color: fuchsia;
+      .container{
+        /* background-color: brown; */
+        /* width: 50%; */
+        margin: 5px;
+      } 
+      nav {
+        padding: 1.5rem 1rem;
       }
-    nav {
-        padding: 0.7rem 0.5rem;
-      }
-      nav ul {
-        position: fixed;
-        background-color:white;
+      .menu{
+        display: flex;
         flex-direction: column;
-        top: 86px; 
-        left: 10%; 
-         width: 30%; 
+        gap: 2rem;
+        position:contain ;
+      }
+      .navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color:aliceblue;  
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1; 
+        padding: 2rem 3rem;    
+        box-shadow: 0 3px 5px black; 
+    }
+      /* nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
-      }
+      } */
        nav ul li {
         margin: 8px;
       }
-      .burger-menu {
+      /* .burger-menu {
         display: block;
-      }
-    
+      } */
       nav ul.show {
         transform: translateX(0);
       }
+      /* .heading{
+        background-color: burlywood;
+        width: 50%;
+        height: 600px;
+        padding: 32px 0;  
+        margin-top: 2rem;
+        border-radius: 7px;
+     }  */
+     .heading{
+      /* background-color: blanchedalmond; */
+      /* background-image: url("https://c2.staticflickr.com/6/5208/5308016251_3eaa8dc84d_b.jpg");   */
+      /* background-image: url("Limeade.jpg"); */
+      /* width: 100%; */
+      height: 850px;
+      padding: 2px 100px;  
+      margin-top: 2rem;
+      border-radius: 7px;
+   } 
+     .hero {
+      margin-top: 2rem; 
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .hero img {
+          height: 37.5rem;
+          width: 30rem;
+      }
+  
+    .bio {
+      /* margin-top: -7rem; */
+      width: 20.5rem;
+    }
+    .more-about {
+      margin-top: 2rem;
+      padding: 1rem 3.5rem;
+    }
+  
+    .more-about h2 {
+      text-align: center;
+    }
+  
+    .more-about p {
+      text-align: justify;
+    }
+  
+     .portfolio_img{
+      max-width: 173px; 
+      max-height:236px ;
+      object-fit: cover;  
+    }
+    .icon {
+      width: 5.875rem;
+      height: 5.25rem;
+    }
+    .projects-container {
+      flex-direction: column;
+    }
+    .project-container {
+      width: 10.875rem;
+    }
+    .contact-form-container {
+      max-width: 23.75rem;
+    }
+     
+    
   }
+  @media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 15.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+  } 
+  
